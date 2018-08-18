@@ -13,7 +13,7 @@ __all__ = (
 )
 
 
-__version__ = (0, 0, 0, 'alpha')
+__version__ = (0, 0, 0)
 
 
 def version_string(version=__version__):
