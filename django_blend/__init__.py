@@ -1,21 +1,15 @@
-""" Provides a simple starter module for creating new Python projects.
+""" Provides convention-over-configuration for your Django projects
 
-You can use this project to create new modules quickly. The process for
-creating a new module is to simply fork this project, rename the
-*project_module* package, change it's content to and explain your project by
-replacing any current documentation.
-
-TODO: This docstring should be in standard PEP8 style, with a short description
-of the module on the first line as seen above. The short line should be
-followed by a long-form description of your module similar to the one which you
-are currently reading.
+This project provides tooling to help with defining and discovering uses of
+conventions in projects, so that the usual approach of excessive configuration
+can be narrowed down where it makes sense in your Django projects.
 
 """
 
 __all__ = (
     '__version__',
     'version',
-    'prjoect_name',
+    'name',
 )
 
 
