@@ -1,8 +1,9 @@
 """ Provides convention-over-configuration for your Django projects
 
-This project provides tooling to help with defining and discovering uses of
-conventions in projects, so that the usual approach of excessive configuration
-can be narrowed down where it makes sense in your Django projects.
+This project provides tooling to help with defining and discovering
+implementations of conventions in your Django projects, so that the usual
+approach of excessive configuration can be narrowed down only where it makes
+sense.
 
 """
 
