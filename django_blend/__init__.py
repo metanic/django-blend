@@ -7,6 +7,14 @@ sense.
 
 """
 
+import sys
+
+from . import discovery
+from .discovery import Group
+from .discovery import IGroup
+from .discovery.scanning import scanner
+
+
 __all__ = (
     '__version__',
     'version_string',
@@ -53,3 +61,13 @@ def short_description():
     """ Provides a summarized project desription """
 
     return long_description(content=__doc__.split('\n', 1)[0])
+
+
+
+def autodiscover():
+    """ Discover any objects which have been added to any blending groups """
+
+    scanner.scan(sys.modules[__name__])
+
+    for _, group in discovery._internal.lookupAll([], IGroup):
+        group.discover()
