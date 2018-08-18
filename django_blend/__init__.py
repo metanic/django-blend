@@ -8,8 +8,10 @@ can be narrowed down where it makes sense in your Django projects.
 
 __all__ = (
     '__version__',
-    'version',
+    'version_string',
     'name',
+    'long_description',
+    'short_description',
 )
 
 
